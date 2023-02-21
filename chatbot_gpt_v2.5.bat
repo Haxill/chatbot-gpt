@@ -70,9 +70,7 @@ set /p user_input="Vous: "
 rem Si l'input est vide alors pas d'envoi de la demande
 If "%user_input%"=="" set user_input=%user_input:~0,1% & goto chat_loop
 rem Quitter le script
-echo %user_input%|findstr /i /l "bye quit quitter exit ciao aurevoir" >nul
-If %ERRORLEVEL% EQU 0 goto end
-echo %user_input%|findstr /i /l "à a au"|findstr /i /l "revoir bientôt bientot" >nul
+echo %user_input%|findstr /i /l "bye quit exit ciao" > nul
 If %ERRORLEVEL% EQU 0 goto end
 
 rem Gestion des accents
