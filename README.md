@@ -3,7 +3,7 @@ Script "chatbot_gpt_v2.5.bat" réalisé par Haxill
 # Script de conversation vocale avec l'IA d'OpenAI (ChatGPT3)
 Ce script vous permet de chatter avec l'IA d'OpenAI (ChatGPT3) et d'obtenir une réponse utilisant la synthèse vocale de Windows.
 
-![chatbot_gpt_v2 5_exemples](https://user-images.githubusercontent.com/125899669/220245075-f9469813-969c-41b7-9b81-528bd469fc8e.png)
+![chatbot_gpt_v2 5_exemples](https://user-images.githubusercontent.com/125899669/220246685-c8a2dd47-e77d-43fa-be30-ae6642d7f943.png)
 
 *Tips: Pour pouvoir également lui parler, utilisez un micro de bonne qualité et mappez la suite de touche WINDOWS+H et ENTER, pour plus de fluidité.*
 
