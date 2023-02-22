@@ -77,6 +77,7 @@ rem Gestion des accents
 chcp 1252 > nul
 set "user_input=%user_input:à=a%"
 set "user_input=%user_input:â=a%"
+set "user_input=%user_input:À=A%"
 set "user_input=%user_input:é=e%"
 set "user_input=%user_input:è=e%"
 set "user_input=%user_input:ê=e%"
@@ -90,6 +91,9 @@ set "user_input=%user_input:û=u%"
 set "user_input=%user_input:ü=u%"
 set "user_input=%user_input:ç=c%"
 set "user_input=%user_input:Ç=c%"
+set "user_input=%user_input:"='%"
+set "user_input=%user_input:(=%"
+set "user_input=%user_input:)=%"
 chcp 65001 > nul
 
 rem Définition et initialisation des variables de la requête vers ChatGPT
@@ -110,15 +114,20 @@ for /f "tokens=2 delims={}" %%a in ('curl.exe -s -X POST -H "%header01%" -H "%he
 rem Suppression des déchets lors de la récupération des champs du JSON
 set "reponse=%reponse:text":"=%"
 set "reponse=%reponse:0,"logprobs":null,"finish_reason":"stop=%"
-set "reponse=%reponse:\n=%"
+rem Prise en charge de l'affichage des retours à la ligne
+set reponse=%reponse:\n=^&echo.%
 set "reponse=%reponse:\"='%"
 set "reponse=%reponse:","index=%"
 set "reponse=%reponse:.=. %"
 set "reponse=%reponse:":=%"
 
 rem Affichage de la réponse de ChatGPT
-echo   IA: %reponse%
+echo   IA: %reponse:~14%
 echo.
+
+rem Suppression des retours à la ligne avant envoie pour Sapi
+set "reponse=%reponse:&echo=%"
+
 rem Bascule de l'encodage en ANSI
 chcp 1252 > nul
 If exist "chatgpt.vbs" (del chatgpt.vbs)
