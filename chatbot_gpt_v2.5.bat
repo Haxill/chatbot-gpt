@@ -114,15 +114,15 @@ for /f "tokens=2 delims={}" %%a in ('curl.exe -s -X POST -H "%header01%" -H "%he
 rem Suppression des déchets lors de la récupération des champs du JSON
 set "reponse=%reponse:text":"=%"
 set "reponse=%reponse:0,"logprobs":null,"finish_reason":"stop=%"
-rem Prise en charge de l'affichage des retours à la ligne
-set reponse=%reponse:\n=^&echo.%
 set "reponse=%reponse:\"='%"
 set "reponse=%reponse:","index=%"
 set "reponse=%reponse:.=. %"
 set "reponse=%reponse:":=%"
+rem Prise en charge de l'affichage des retours à la ligne
+set reponse=%reponse:\n=^&echo.%
 
 rem Affichage de la réponse de ChatGPT
-echo   IA: %reponse:~14%
+echo   IA: %reponse%
 echo.
 
 rem Suppression des retours à la ligne avant envoie pour Sapi
