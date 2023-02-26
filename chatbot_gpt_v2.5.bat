@@ -45,6 +45,7 @@ for /f "tokens=2 delims={}" %%a in ('curl.exe -s -X POST -H "%header01%" -H "%he
 rem Suppression des déchets lors de la récupération des champs du JSON
 set "reponse=%reponse:text":"=%"
 set "reponse=%reponse:0,"logprobs":null,"finish_reason":"stop=%"
+set "reponse=%reponse:0,"logprobsnull,"finish_reasonnull=%"
 set "reponse=%reponse:\n=%"
 set "reponse=%reponse:\"='%"
 set "reponse=%reponse:","index=%"
