@@ -5,7 +5,7 @@ Ce script vous permet de chatter avec l'IA d'OpenAI (ChatGPT3) et d'obtenir une 
 
 ![chatbot_gpt_v2 5_exemples](https://user-images.githubusercontent.com/125899669/221325057-2b93c230-89eb-49cd-b2a2-b2dd8e83d82a.png)
 
-*Tips: Pour pouvoir également lui parler, utilisez un micro de bonne qualité et mappez la suite de touche WINDOWS+H et ENTER, pour plus de fluidité.*
+*Tips: Pour pouvoir également lui parler, utilisez un micro de bonne qualité et mappez la suite de touche WINDOWS+H et ENTER, pour plus de fluidité. J'utilise un EAGLETONE UM30 et c'est parfait.*
 
 ## Fonctionnalités
 * Aucune installation supplémentaire n'est nécessaire.
@@ -24,6 +24,7 @@ A venir :
 * Souvenir de la dernière réponse (déjà testé mais tourne rapidement en boucle).
 * Lecture des dernières news dans le monde (flux RSS des news).
 * Exif (recherche de meta-données sur une phooto en indiquant simplement le chemin sur le PC - exiftool(-k).exe).
+* Le mieux serait de passer sur gpt-3.5-turbo pour pouvoir chatter. Celà va demander beaucoup d'adaptations.
 * [...]
 
 ## Limitations actuelles
