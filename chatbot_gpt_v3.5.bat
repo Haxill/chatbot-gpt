@@ -4,7 +4,7 @@ rem Nom du fichier : chatbot_gpt_v2.5.bat
 rem Créé par Haxill le 20/02/2023
 
 rem Titre de la fenêtre
-title IA - ChatGPT 3 - by Haxill
+title IA - ChatGPT 3.5 - by Haxill
 rem Définition de la couleur de fond de la fenêtre et du texte
 rem En mode Matrix, pour le style : color 0a
 color 0a
