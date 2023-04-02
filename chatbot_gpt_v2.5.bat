@@ -16,8 +16,8 @@ rem Déclaration et initialisation des variables de la requête vers ChatGPT
 set max_tokens=1024
 set n=1
 set temperature=0.8
-set url=https://api.openai.com/v1/completions
-set model=text-davinci-003
+set url=https://api.openai.com/v1/chat/completions
+set model=gpt-3.5-turbo
 set header01=Content-Type:application/json
 set header02=Authorization:Bearer
 set monnom=
