@@ -4,7 +4,7 @@ rem Nom du fichier : chatbot_gpt_v2.5.bat
 rem Créé par Haxill le 20/02/2023
 
 rem Titre de la fenêtre
-title IA - ChatGPT 3.5 - by Haxill
+title IA - ChatGPT 3.0 - by Haxill
 rem Définition de la couleur de fond de la fenêtre et du texte
 rem En mode Matrix, pour le style : color 0a
 color 0a
@@ -16,8 +16,8 @@ rem Déclaration et initialisation des variables de la requête vers ChatGPT
 set max_tokens=1024
 set n=1
 set temperature=0.8
-set url=https://api.openai.com/v1/chat/completions
-set model=gpt-3.5-turbo
+set url=https://api.openai.com/v1/completions
+set model=text-davinci-003
 set header01=Content-Type:application/json
 set header02=Authorization:Bearer
 set monnom=
