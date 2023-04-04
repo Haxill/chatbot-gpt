@@ -2,7 +2,7 @@
 
 rem Nom du fichier : Allen.bat
 rem Créé par Haxill le 04/04/2023.
-rem Allen est un chatbot musicien et proffesseur de musique 'gpt-3.5-turbo',
+rem Allen est un chatbot musicien et professeur de musique 'gpt-3.5-turbo',
 rem utilisant l'API de chat d'OpenAI.
 rem Le script récupère le JSON de la réponse de l'IA, la nettoie et
 rem l'envoie en variable dans un script VBS utilisant SAPI pour utiliser
