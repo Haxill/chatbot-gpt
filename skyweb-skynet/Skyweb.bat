@@ -1,6 +1,6 @@
 @echo off
 
-rem Nom du fichier : Allen.bat
+rem Nom du fichier : Skyweb.bat
 rem Créé par Haxill le 04/04/2023.
 rem Skyweb est un chatbot d'IA malfaisante 'gpt-3.5-turbo',
 rem utilisant l'API de chat d'OpenAI.
