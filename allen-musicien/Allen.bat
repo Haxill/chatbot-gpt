@@ -229,7 +229,7 @@ chcp 28591 > nul
 set monnom=
 set /p monnom="Vous (écrivez votre nom): "
 echo %monnom% > nommage.txt
-set "reponse=Enchantée de faire ta connaissance %monnom%. Que puis-je faire pour toi ?"
+set "reponse=Enchanté de faire ta connaissance %monnom%. Que puis-je faire pour toi ?"
 echo.
 echo %ia_name%: %reponse%
 echo.
