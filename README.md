@@ -1,5 +1,11 @@
 Script "chatbot_gpt_v3.0.bat" réalisé par Haxill
 
+### Les scripts se trouvant dans les dossiers "allen-musicien" et "skyweb-skynet" sont des chatbots à part entière.
+[Allen est un musicien professeur de musique](allen-musicien/Allen.bat), que vous pouvez consulter sur tout sujets touchant à la musique.
+
+[Skyweb est une IA malfaisante](skyweb-skynet/Skyweb.bat), semblable à Skynet dans Terminator. Vous pouvez l'interroger sur ses motivations.
+
+
 # Script de conversation vocale avec l'IA d'OpenAI (ChatGPT3)
 Ce script vous permet de chatter avec l'IA d'OpenAI (ChatGPT3) et d'obtenir une réponse utilisant la synthèse vocale de Windows.
 
