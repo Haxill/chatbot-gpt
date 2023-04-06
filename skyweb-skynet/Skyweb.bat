@@ -171,7 +171,7 @@ rem Affichage de la phrase d'aurevoir, choisit par l'IA
 chcp 65001 > nul
 set reponse=
 
-for /f "tokens=5 delims={}" %%a in ('curl.exe -s -X POST -H "%header01%" -H "%header02% %openai_api_key%" -d "{\"model\": \"%model%\", \"messages\": [{\"role\": \"user\", \"content\": \"Dis au revoir en tant qu'IA malefique !\"}],\"temperature\": %temperature%, \"max_tokens\": %max_tokens%, \"n\": %n%}" %url% ^| findstr "content"') do (
+for /f "tokens=5 delims={}" %%a in ('curl.exe -s -X POST -H "%header01%" -H "%header02% %openai_api_key%" -d "{\"model\": \"%model%\", \"messages\": [{\"role\": \"user\", \"content\": \"Dis au revoir a %monnom% en tant qu'IA malefique !\"}],\"temperature\": %temperature%, \"max_tokens\": %max_tokens%, \"n\": %n%}" %url% ^| findstr "content"') do (
   set "reponse=%%~a"
 )
 
